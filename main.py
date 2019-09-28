@@ -2,13 +2,13 @@
 
 # 1 - imports
 from base import Session
-from planet import Test
+from planet import Planet
 
 # 2 - extract a session
 session = Session()
 
 # 3 - extract all movies
-tests = session.query(Test).all()
+planeten = session.query(Planet).all()
 
-for test in tests:
-    print(f'Test: {test.id}')
+for planet in planeten:
+    print(f'Plaent {planet.id}: {planet.name}')
