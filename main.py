@@ -2,7 +2,7 @@
 
 # 1 - imports
 from base import Session
-from test import Test
+from planet import Test
 
 # 2 - extract a session
 session = Session()
