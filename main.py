@@ -11,4 +11,4 @@ session = Session()
 planeten = session.query(Planet).all()
 
 for planet in planeten:
-    print(f'Palnet {planet.id}: {planet.name}')
+    print(f'Planet {planet.id}: {planet.name}')
