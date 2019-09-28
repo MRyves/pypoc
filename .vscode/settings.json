@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\yvesh\\.virtualenvs\\pypoc-fVNJS4Ja\\Scripts\\python.exe"
+    "python.venvPath": "C:\\Users\\yvesh\\.virtualenvs\\",
+    "python.pythonPath": "C:\\Users\\yvesh\\.virtualenvs\\pypoc-fVNJS4Ja\\Scripts\\python.exe",
+    "python.jediEnabled": false,
 }

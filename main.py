@@ -2,13 +2,23 @@
 
 # 1 - imports
 from base import Session
-from planet import Planet
+from monde import Moon
 
 # 2 - extract a session
-session = Session()
+from planet.PlanetDao import PlanetDao
+from planet.PlanetModel import Planet
 
-# 3 - extract all movies
-planeten = session.query(Planet).all()
+planetDao = PlanetDao()
+planets = planetDao.getAll()
 
-for planet in planeten:
+for planet in planets:
     print(f'Planet {planet.id}: {planet.name}')
+    for moonObj in planet.moons:
+        print(f'\tMoon {moonObj.id}: {moonObj.name}')
+
+print('Adding new planet: Earth')
+earth = Planet()
+earth.weight = 100
+earth.name = 'earth'
+earth.moons = [Moon('earth-moon')]
+
