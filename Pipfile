@@ -9,6 +9,7 @@ autopep8 = "*"
 
 [packages]
 sqlalchemy = "*"
+pandas = "*"
 mysql-connector-python = "*"
 
 [requires]

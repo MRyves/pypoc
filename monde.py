@@ -4,7 +4,7 @@ from base import Base
 
 
 class Moon(Base):
-    __tablename__ = 'moon'
+    __tablename__ = 'monde'
     id = Column(Integer, primary_key=True)
     name = Column('name', String(32))
     planet_id = Column(Integer, ForeignKey('planet.id'))

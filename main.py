@@ -3,22 +3,11 @@
 # 1 - imports
 from base import Session
 from monde import Moon
+from db_setup import dbSetup
+from db_print import dbPrint
 
-# 2 - extract a session
-from planet.PlanetDao import PlanetDao
-from planet.PlanetModel import Planet
+#Initialise the database up from Planet_List.xlsx
+dbSetup()
 
-planetDao = PlanetDao()
-planets = planetDao.getAll()
-
-for planet in planets:
-    print(f'Planet {planet.id}: {planet.name}')
-    for moonObj in planet.moons:
-        print(f'\tMoon {moonObj.id}: {moonObj.name}')
-
-print('Adding new planet: Earth')
-earth = Planet()
-earth.weight = 100
-earth.name = 'earth'
-earth.moons = [Moon('earth-moon')]
-
+#Print all planets and moons
+dbPrint()

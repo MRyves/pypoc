@@ -5,7 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 engine = create_engine(
-    'mysql+mysqlconnector://admin:admin@localhost:3306/planeten')
+    'mysql+mysqlconnector://root@localhost:3306/planeten')
 Session = sessionmaker(bind=engine)
 
 Base = declarative_base()
