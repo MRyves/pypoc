@@ -10,6 +10,9 @@ autopep8 = "*"
 [packages]
 sqlalchemy = "*"
 pandas = "*"
+xlsxwriter = "*"
+xlrd = "*"
+time = "*"
 mysql-connector-python = "*"
 
 [requires]
